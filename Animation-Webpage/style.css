@@ -1,0 +1,93 @@
+.container {
+  width: 780px;
+  height: 780px;
+  border: #000 solid 3px;
+  border-radius: 5px;
+  position: relative;
+  left: 50px;
+  top: 50px;
+}
+
+#wall {
+  display: grid;
+  grid-template-columns: repeat(7, 100px);
+  grid-gap: 10px;
+  padding: 10px;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.wall-brick {
+  height: 100px;
+  background-color: rgb(18, 235, 47);
+}
+
+#bath-tub {
+  width: 1040px;
+  height: 620px;
+  padding: 10px;
+  z-index: 5;
+  position: absolute;
+}
+
+.one {
+  opacity: 0.2;
+  animation: loop1 1s linear 0s infinite normal;
+}
+
+.two {
+  opacity: 0.6;
+  animation: loop2 1s linear 0s infinite normal;
+}
+
+.three {
+  opacity: 1;
+  animation: loop3 1s linear 0s infinite normal;
+}
+
+@keyframes loop1 {
+  0% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 0.6;
+  }
+  66.66% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes loop2 {
+  0% {
+    opacity: 0.2;
+  }
+  33.33% {
+    opacity: 1;
+  }
+  66.66% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes loop3 {
+  0% {
+    opacity: 0.6;
+  }
+  33.33% {
+    opacity: 0.2;
+  }
+  66.66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
