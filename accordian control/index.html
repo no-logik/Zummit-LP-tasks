@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            accordian trial
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <style>
+            h1{
+                text-align: center;
+            }
+            #accordian-demo{
+                width: 800px;
+                max-width: 800px;
+                border: #444 1px solid;
+                padding: 2px;
+                margin: auto;
+            }
+            button{
+                width: 790px;
+                text-align: left;
+                position: relative;
+            }
+            span{
+                display: inline-block;
+                position: absolute;
+                right: 0;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Accordian Control Demo</h1>
+        </header>
+        <div class="accordian" id="accordian-demo">
+            <div class="accordian-item">
+                <h2 class="accordian-header" id="headingOne">
+                    <button class="accordian-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Accordian Item #1<span>🔽</span>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordian-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordian-demo">
+                    <div class="accordian-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nostrum voluptatem, in totam vitae minima quos sunt? At incidunt debitis unde nemo dignissimos architecto rerum culpa, alias nobis consectetur sapiente.
+                    </div>
+                </div>
+            </div>
+            <div class="accordian-item">
+                <h2 class="accordian-header" id="headingTwo">
+                    <button class="accordian-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordian Item #2 <span>🔽</span>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordian-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordian-demo">
+                    <div class="accordian-body">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident distinctio saepe architecto non eius laborum repudiandae! Repellendus voluptates, accusantium vero fugit voluptate placeat tenetur facilis dignissimos amet ipsum. Soluta, veniam.
+                    </div>
+                </div>
+            </div>
+            <div class="accordian-item">
+                <h2 class="accordian-header" id="headingThree">
+                    <button class="accordian-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        Accordian Item #3<span>🔽</span>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordian-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordian-demo">
+                    <div class="accordian-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, deserunt numquam animi voluptates dolorum accusantium aspernatur perspiciatis quidem cum placeat excepturi maiores ex nam blanditiis at commodi dolore, exercitationem dolores!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
